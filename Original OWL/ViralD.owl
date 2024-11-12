@@ -1,0 +1,872 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#"
+     xml:base="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#contains">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Virus"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Symptoms"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#has -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#has">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Host"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Virus"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Symptom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Symptom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Host"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#age">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Human"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#medium -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#medium">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Host"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#scientific_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#scientific_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Host"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Virus"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#symptom_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#symptom_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Symptoms"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#virus_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#virus_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Virus"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Adenoviruses -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Adenoviruses">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#high_fever"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#impaired_bladder"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#DNA_Virus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Adult -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Adult">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Human"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Child -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Child">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Human"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Coronaviruses -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Coronaviruses">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Positive_stranded"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#DNA_Virus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#DNA_Virus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Virus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Dengue_fever_viruses -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Dengue_fever_viruses">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Positive_stranded"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Ebolavirus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Ebolavirus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Negative_Stranded"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#HIV-1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#HIV-1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Retroviruses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#HIV-2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#HIV-2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Retroviruses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#HSV-1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#HSV-1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Herpes_viruses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#HSV-2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#HSV-2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Herpes_viruses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#HTLV-1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#HTLV-1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Retroviruses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#HTLV-2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#HTLV-2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Retroviruses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Hepatitis_A -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Hepatitis_A">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Positive_stranded"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Hepatitis_B -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Hepatitis_B">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#DNA_Virus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Herpes_viruses -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Herpes_viruses">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#DNA_Virus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Host -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Host">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#has"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Virus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Human -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Human">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Host"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Human_metapneumovirus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Human_metapneumovirus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Negative_Stranded"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Infant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Infant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Human"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#KSHV -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#KSHV">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Herpes_viruses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Morbillivirus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Morbillivirus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Negative_Stranded"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Mumps_virus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Mumps_virus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Negative_Stranded"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Negative_Stranded -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Negative_Stranded">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#RNA_virus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Noroviruses -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Noroviruses">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Positive_stranded"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Other_Animals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Other_Animals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Host"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Parainfluenza_viruses -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Parainfluenza_viruses">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Negative_Stranded"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Positive_stranded -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Positive_stranded">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#RNA_virus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#RNA_virus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#RNA_virus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Virus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Rabies_virus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Rabies_virus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Negative_Stranded"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Respiratory_syncytial_virus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Respiratory_syncytial_virus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Negative_Stranded"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Retroviruses -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Retroviruses">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#RNA_virus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Rhinoviruses -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Rhinoviruses">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Positive_stranded"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Rubella_viruses -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Rubella_viruses">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Positive_stranded"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Smallpox -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Smallpox">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#high_fever"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#weakness"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#DNA_Virus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Symptoms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Symptoms">
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Host"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Virus"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Vaccinia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Vaccinia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#DNA_Virus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Varicella-zoster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Varicella-zoster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#DNA_Virus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Virus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Virus">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Symptoms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Yellow_fever_virus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Yellow_fever_virus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Positive_stranded"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#back_pain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#back_pain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#coughing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#coughing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#dehydration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#dehydration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#diahorrea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#diahorrea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#hepatitis_C -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#hepatitis_C">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Positive_stranded"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#high_fever -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#high_fever">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#impaired_bladder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#impaired_bladder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#loss_sensation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#loss_sensation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#muscle_ache -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#muscle_ache">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#rash -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#rash">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#seizure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#seizure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#shivering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#shivering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#vomiting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#vomiting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#weakness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#weakness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Adult1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Adult1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Adult"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</age>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Faisal</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Back_Pain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Back_Pain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#back_pain"/>
+        <symptom_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">back pain</symptom_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Dengue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Dengue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Dengue_fever_viruses"/>
+        <contains rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#dehydration"/>
+        <contains rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#high_fever"/>
+        <contains rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#impaired_bladder"/>
+        <virus_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dengue</virus_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Hepatitis_A -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Hepatitis_A">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Hepatitis_A"/>
+        <contains rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#impaired_bladder"/>
+        <contains rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#rash"/>
+        <contains rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#vomiting"/>
+        <virus_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hepatitis A</virus_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Hepatitis_B -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Hepatitis_B">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Hepatitis_B"/>
+        <contains rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#diahorrea"/>
+        <virus_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hepatitis_B</virus_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Human1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Human1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Human"/>
+        <has rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Small_Pox"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#int">21</age>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gerbeer</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Human2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Human2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Human"/>
+        <has rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Small_Pox"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Human3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Human3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Human"/>
+        <has rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Dengue"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</age>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shuvo</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Human4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Human4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Human"/>
+        <has rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Mumps"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Human5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Human5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Human"/>
+        <has rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Small_Pox"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Human6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Human6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Human"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Mumps -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Mumps">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Mumps_virus"/>
+        <contains rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#losssensation"/>
+        <contains rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#rash"/>
+        <virus_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mumps</virus_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Rabies -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Rabies">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Rabies_virus"/>
+        <contains rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#losssensation"/>
+        <contains rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#muscleache"/>
+        <contains rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#shivering"/>
+        <virus_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rabies</virus_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Small_Pox -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Small_Pox">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#Smallpox"/>
+        <contains rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#high_fever"/>
+        <contains rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#losssensation"/>
+        <virus_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Small Pox</virus_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#coughing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#coughing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#coughing"/>
+        <symptom_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coughing</symptom_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#dehydration -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#dehydration">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#dehydration"/>
+        <symptom_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dehydration</symptom_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#diahorrea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#diahorrea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#diahorrea"/>
+        <symptom_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diahorrea</symptom_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#high_fever -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#high_fever">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#high_fever"/>
+        <symptom_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high fever</symptom_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#impaired_bladder -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#impaired_bladder">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#impaired_bladder"/>
+        <symptom_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">impaired_bladder</symptom_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#losssensation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#losssensation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#loss_sensation"/>
+        <symptom_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Loos of Sensation</symptom_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#muscleache -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#muscleache">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#muscle_ache"/>
+        <symptom_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Muscle Ache</symptom_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#rash -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#rash">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#rash"/>
+        <contains rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#rash"/>
+        <symptom_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rash</symptom_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#seizure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#seizure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#seizure"/>
+        <symptom_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">seizure</symptom_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#shivering -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#shivering">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#shivering"/>
+        <symptom_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shivering</symptom_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#vomiting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#vomiting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#vomiting"/>
+        <symptom_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vomiting</symptom_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#weakness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#weakness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dipta/ontologies/2018/4/untitled-ontology-28#weakness"/>
+        <symptom_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">weakness</symptom_name>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
